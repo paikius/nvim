@@ -1,3 +1,5 @@
+_G.vim = vim
+_G.LazyVim = LazyVim
 require("config.lazy")
 
 -- Tabs & Indentation
