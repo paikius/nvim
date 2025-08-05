@@ -93,5 +93,19 @@ return {
             capabilities = capabilities,
         })
 
+        vim.lsp.config("gopls", {
+            settings = {
+                gopls = {
+                    analyses = {
+                        unusedparams = true,
+                    },
+                    staticcheck = true,
+                    usePlaceholders = true,
+                    completeUnimported = true, -- This enables auto-import
+                    gofumpt = true,
+                },
+            },
+        })
+
     end,
 }
